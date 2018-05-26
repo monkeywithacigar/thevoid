@@ -1,9 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: kille
+ * Created using PhpStorm.
+ * User: Michael Dart
  * Date: 26/05/2018
  * Time: 11:15
  */
 
-phpinfo();
+require_once('framework/core/frameworkClass.php');
+
+Framework::run();
