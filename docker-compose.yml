@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  php:
+    build: ./core
+    container_name: void_php
+    ports:
+      - 80:80
+    volumes:
+      - ./core/src:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:latest
+    container_name: void_db
+    restart: always
+    volumes:
+      - ./database:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: void_pma
+    environment:
+      - PMA_ARBITARY=1
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./pma
+    depends_on:
+      - db
