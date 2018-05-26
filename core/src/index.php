@@ -1,11 +1,34 @@
 <?php
 /**
  * Created using PhpStorm.
- * User: Michael Dart
- * Date: 26/05/2018
- * Time: 11:15
+ * Creator: Michael Dart
+ *
+ * AppName: The Void Framework
  */
 
-require_once('framework/core/frameworkClass.php');
+/**
+ * Directory Setup
+ *
+ * src
+ * |- application
+ * | |- controllers
+ * | |- models
+ * | |- views
+ * |
+ * |- framework
+ * | |- core
+ * | |- database
+ * | |- helpers
+ * | |- libraries
+ * |
+ * |- public
+ * | |- css
+ * | |- images
+ * | |= js
+ * | |- uploads
+ *
+ */
+
+require_once('framework/core/Framework.class.php');
 
 Framework::run();
