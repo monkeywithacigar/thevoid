@@ -10,6 +10,7 @@ class mainController extends Controller
 {
     public function indexMethod()
     {
-        echo "main index";
+        load::view("main::index");
+
     }
 }

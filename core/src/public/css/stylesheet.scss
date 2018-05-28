@@ -1,0 +1,70 @@
+// Variables
+$primary: #2E3136;
+$secondary: #45474a;
+$tertiary: #848c8e;
+$hyperlinks: #a24936;
+$font: #F2F3F4;
+$border: #000000;
+
+body {
+  background-color: $primary;
+  color: $font;
+  font-family: Verdana, Tahoma;
+  margin: 0;
+}
+
+.main_page {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main_page_guide {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content_wrapper {
+  width: 1024px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 25px 0
+}
+
+header {
+  background-color: $secondary;
+  margin-bottom: 100px;
+  border: 1px solid $border;
+  border-top: 0;
+}
+
+.main_body{
+  background-color: $secondary;
+  border: 1px solid $border;
+  margin: 100px 0 100px 0;
+}
+
+footer {
+  background-color: $secondary;
+  margin-top: 100px;
+  border: 1px solid $border;
+  border-bottom: 0;
+}
+
+a {
+  color: $hyperlinks;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #cd0a0a;
+}
+
+label {
+  font-size: 0.8em;
+}
