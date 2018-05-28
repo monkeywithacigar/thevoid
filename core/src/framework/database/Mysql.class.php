@@ -20,8 +20,6 @@ class Database
         // Check if a connection has already been established
         if (!isset($this->instance)) {
 
-
-
             $host = isset($config['host'])? $config['host'] : 'localhost';
             $user = isset($config['user'])? $config['user'] : 'root';
             $password = isset($config['password'])? $config['password'] : '';
